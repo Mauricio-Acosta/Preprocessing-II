@@ -201,18 +201,89 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
+@media (max-width: 500px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
 .home .header {
   display: flex;
   align-items: baseline;
   padding-top: 1rem;
+  padding-bottom: 2%;
+  border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .home .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .home .header nav {
+    display: flex;
+    width: inherit;
+    margin-right: 80%;
+    margin-bottom: -3%;
+  }
+}
+.home .banner {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .home .banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+  }
+}
+.home .banner .bannerBottomTitle {
+  font-family: 'Indie Flower', cursive;
+  font-size: 3.2rem;
+  padding-top: 3%;
+}
+.home .bannerBottomText {
+  color: #212529;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  padding-top: 1%;
+  padding-bottom: 2.5%;
+}
+@media (max-width: 500px) {
+  .home .bannerBottomText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
 }
 .home .content-section {
   margin: 30px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  border-top: 2px dashed #C0C0C0;
-  padding-top: 3%;
+  padding-top: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section {
+    margin: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 1%;
+    width: 100%;
+  }
+  .home .content-section .text-content {
+    border: 1px solid green;
+    border-right: 100%;
+  }
 }
 .home .content-section .text-content {
   width: 48%;
@@ -250,11 +321,19 @@ img {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
 }
-.btn {
+.home .btn {
   border-radius: 1.5rem;
   padding: 1.2rem;
   position: relative;
